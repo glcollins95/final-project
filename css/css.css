@@ -1,0 +1,202 @@
+body {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+h1{
+  color: #223256
+}
+
+p {
+  font-family: "Palatino", sans-serif;
+  color: #223256
+}
+
+a {
+  text-decoration: none;
+}
+
+.pageTextTitle,
+.subsection {
+  display: flex;
+  box-orient: vertical;
+  box-direction: normal;
+  flex-direction: column;
+  box-pack: center;
+  justify-content: center;
+  box-align: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
+}
+.pageTextTitle h1,
+.subsection h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+.pageTextTitle h3,
+.subsection h3 {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+
+.navBarContainer {
+  display: flex;
+  box-orient: horizontal;
+  box-direction: normal;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index: 10;
+}
+.navBarContainer--top {
+  position: fixed;
+  top: 0;
+}
+
+.navBarItem {
+  display: flex;
+  box-pack: center;
+  justify-content: center;
+  box-align: center;
+  align-items: center;
+  box-flex: 1;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.navBarItem:hover {
+  color: white;
+  background:#223256;
+  transition: all 0.5s ease;
+}
+
+.navBarItemSlider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #223256;
+  transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+  .pageTextTitle h1,
+  .subsection h1 {
+    font-size: 3rem;
+  }
+  .pageTextTitle h3,
+  .subsection h3 {
+    font-size: 1rem;
+  }
+
+  .pageTextTitle {
+    font-size: 1rem;
+  }
+}
+
+.wishlist-item {
+  margin: 10px;
+}
+
+.my-card-button {
+  background-color: #223256;
+  color: #fff;
+}
+
+.my-card-button:hover {
+  color: white;
+  background:#223256;
+  transition: all 0.5s ease;
+}
+
+.top {
+  background-color:
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  height: 590px;
+  background-color:
+  margin: -100px auto;
+  border-radius: 0px;
+  color:
+  padding: 0px 0px;
+  box-shadow: 2px 2px 4px rgb();
+}
+
+.info {
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px
+}
+
+p.line {
+  margin: 0px auto 20px auto;
+  color: #999;
+}
+
+.form input {
+  font size: 8px;
+  color: #223256;
+  padding: 3px;
+  margin: 5px auto 5px;
+  display: block;
+  width: 75%;
+}
+
+input: focus {
+  outline: 0;
+}
+
+.button button {
+  display: inline-block;
+  width: 400px;
+}
+button {
+  color:#223256;
+  background-color:#ffff;
+  outline-color: #223256;
+  outline-style: solid;
+  border: none;
+  font-family:
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 32px;
+  width: 200px;
+  margin: 20px auto 0px auto;
+  align: flex;
+}
+
+button.accept {
+  border-radius: 0px 0px 0px 10px;
+  border-right: solid 1px #223256;
+}
+
+button.regret {
+  border-radius: 0px 0px 10px 0px;
+  border-right: solid 1px #223256;
+}
+
+button:hover {
+  color:#ffff;
+  background-color:#223256;
+  outline-color: #223256;
+  transition: .5s;
+}
+
+button:focus {
+  outline: 0;
+}
